@@ -2,7 +2,7 @@ PROBLEMA: COSTO DEL BIGLIETTO
 
 1.chiedere all'utente quanti chilometri dovrà percorrere
 
-2.creare una variabile con il costo base del biglietto per kilometro
+2.creare una costante con il costo base del biglietto per kilometro
 
 3.calcolare il costo totale del biglietto
 
