@@ -15,23 +15,23 @@ let sconto;
 let prezzo_scontato;
 
 
-// condizioni
+// condizioni + risultato in pagina
 if (eta < 18) {
     sconto = (totale * 20 / 100);
 
     prezzo_scontato = (totale - sconto);
 
-    document.getElementById('prezzo_finale').innerHTML = prezzo_scontato.toFixed(2);
+    document.getElementById('prezzo_finale').innerHTML = prezzo_scontato.toFixed(2) + '€';
 
 } else if ( eta >= 65) {
         sconto = (totale * 40 / 100);
     
         prezzo_scontato = (totale - sconto);
 
-        document.getElementById('prezzo_finale').innerHTML = prezzo_scontato.toFixed(2);
+        document.getElementById('prezzo_finale').innerHTML = prezzo_scontato.toFixed(2) + '€';
 } else {
-    document.getElementById('prezzo_finale').innerHTML = totale.toFixed(2);
+    document.getElementById('prezzo_finale').innerHTML = totale.toFixed(2) + '€';
 }
 
-// risultato in pagina
+
 
