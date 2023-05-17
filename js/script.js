@@ -5,7 +5,7 @@ let kilometri = parseInt(prompt('Quanti kilometri dovrai percorrere?').trim());
 const costo_base = 0.21;
 
 // totale biglietto
-let totale = (kilometri * costo_base).toFixed(2);
+let totale = (kilometri * costo_base);
 
 //eta utente
 let eta = parseInt(prompt('Quanti anni hai?').trim());
@@ -19,18 +19,18 @@ let prezzo_scontato;
 if (eta < 18) {
     sconto = (totale * 20 / 100);
 
-    prezzo_scontato = (totale - sconto).toFixed(2);
+    prezzo_scontato = (totale - sconto);
 
-    document.getElementById('prezzo_finale').innerHTML = prezzo_scontato;
+    document.getElementById('prezzo_finale').innerHTML = prezzo_scontato.toFixed(2);
 
 } else if ( eta >= 65) {
         sconto = (totale * 40 / 100);
     
-        prezzo_scontato = (totale - sconto).toFixed(2);
+        prezzo_scontato = (totale - sconto);
 
-        document.getElementById('prezzo_finale').innerHTML = prezzo_scontato;
+        document.getElementById('prezzo_finale').innerHTML = prezzo_scontato.toFixed(2);
 } else {
-    document.getElementById('prezzo_finale').innerHTML = totale;
+    document.getElementById('prezzo_finale').innerHTML = totale.toFixed(2);
 }
 
 // risultato in pagina
